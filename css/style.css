@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: pink;
+  background-color: lightgray;
   width: 200vw;
   font-family: 'Instrument Serif', serif;
   color: black;
@@ -116,6 +116,7 @@ body {
   left: 2vw;
   top: 2vh;
   transition: ease-in-out 0.5s;
+  z-index: 15;
 }
 
 .logo-small:hover {
@@ -135,10 +136,10 @@ body {
 
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0); */
-  padding: 20px;
+  padding: 0.5vh;
   text-align: center;
-  height: 25vw;
-  width: 25vw;
+  height: 20vw;
+  width: 20vw;
   transition: ease-in-out 0.5s;
   overflow: hidden;
   /* background-color: rgba(137, 43, 226, 0.369); */
@@ -171,7 +172,8 @@ body {
 
 
 .corpus {
-  margin-top: 35vh;
+  margin-top: 20vh;
+  padding-bottom: 5vh;
 }
 
 .corpus_books {
@@ -182,18 +184,18 @@ body {
   max-width: 100%;
   height: 100%;
   border-radius: 1%;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 
 }
 
-.images:hover{
+/* .images:hover{
 filter: grayscale(0%);
-}
+} */
 
 h1 {
   color: black;
-  font-size: 12vh;
-  line-height: 10vh;
+  font-size: 10vh;
+  line-height: 9vh;
   text-align: left;
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
 }
@@ -202,8 +204,8 @@ h1 {
   MANIFESTO */
 h2 {
   color: black;
-  font-size: 5vh;
-  line-height: 5vh;
+  font-size: 7vh;
+  line-height: 7vh;
   text-align: center;
   padding-top: 10vh;
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
@@ -258,10 +260,6 @@ h3 {
 
 
 
-.citation {
-  font-style: italic;
-}
-
 
 .refs {
   overflow: hidden;
@@ -302,7 +300,12 @@ h3 {
   border-radius: 1%;
 }
 
-
+.test{
+  background-color: red;
+  border-radius: 50%;
+  height: 15vh;
+  width: 15vh;
+}
 
 h4 {
   color: black;
@@ -310,21 +313,41 @@ h4 {
   line-height: 5vh;
   text-align: center;
   padding-top: 10vh;
-  text-shadow: 1px 1px 6px rgb(10, 61, 58);
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+  transition: ease-in-out 0.2s;
   text-decoration: none;
 }
 
+h4:hover{
+  color: purple;
+
+}
+
 .print_button{
-  height: 40px;
-  width: 80px;
+  margin-top: 5vh;
+  height: 8vh;
+  width: 8vh;
   background-color: black;
-  color: white;
-  border-radius: 10%;
+  border-radius: 50%;
+
+  position: relative;
+  left: 48vw;
+  transform: translate(-50% -50%);
+
+}
+
+h6{
+  padding-top: 1vh;
   font-size: 2vh;
+  color: black;
   text-align: center;
   text-decoration: none;
   font-family: "PT Serif", serif;
-  left: 30%;
+}
+
+h6:hover{
+  color: white;
+  text-decoration: none;
 }
 
 .collage{
@@ -337,4 +360,53 @@ h4 {
 }
 .collage:hover{
   mix-blend-mode: difference;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .welcome_title {
+    font-size: 25vh;
+    line-height: 20vh;
+    padding-left: 1vw;
+    padding-top: 1vh;
+  }
+
+  .welcome_text {
+    font-size: 3vh;
+  }
+
+  .logo-small {
+    width: 5vw;
+  }
+
+  .grid-item,
+  .grid-item-refs {
+    height: 30vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome_title {
+    font-size: 20vh;
+    line-height: 15vh;
+    padding-left: 0.5vw;
+    padding-top: 0.5vh;
+  }
+
+  .welcome_text {
+    font-size: 2vh;
+  }
+
+  .logo-small {
+    width: 7vw;
+  }
+
+  .grid-item,
+  .grid-item-refs {
+    height: 40vw;
+    width: 40vw;
+  }
 }

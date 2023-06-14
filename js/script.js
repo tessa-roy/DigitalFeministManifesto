@@ -1,6 +1,6 @@
 //DEFINE VARIABLES
 let NumberOfWelcomingDIV = 9; //CHANGE HERE WELCOME DIV NUMBER
-let NumberOfTextDIV = 10; //CHANGE HERE TEXT DIV NUMBER
+let NumberOfTextDIV = 11; //CHANGE HERE TEXT DIV NUMBER
 
 // opening of the website
 addEventListener("DOMContentLoaded", (event) => {
