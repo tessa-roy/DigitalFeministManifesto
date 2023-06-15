@@ -112,6 +112,16 @@ a,button :hover{
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
 }
 
+.welcome_title_2 {
+  color: black;
+  font-size: 40vh;
+  line-height: 30vh;
+  padding-left: 2vw;
+  padding-top: 5vh;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+
 .welcome_texte {
   color: black;
 font-size: 7vh;
@@ -121,6 +131,8 @@ padding-top: 10vh;
 text-shadow: 1px 1px 6px rgb(0, 0, 0);
 text-decoration: none;
 transition: ease-in-out 0.2s;
+padding-left: 15vw;
+padding-right: 15vw;
 }
 
 
@@ -314,17 +326,6 @@ h4:hover {
   color: rgb(255, 106, 0);
 }
 
-.print_button {
-  margin-top: 5vh;
-  height: 8vh;
-  width: 8vh;
-  background-color: black;
-  border-radius: 50%;
-
-  position: relative;
-  left: 48vw;
-  transform: translate(-50% -50%);
-}
 
 h6 {
   padding-top: 1vh;
@@ -341,9 +342,8 @@ h6:hover {
 }
 
 .print_manifesto {
-  padding-top: 3vh;
+  padding-top: 2vh;
   font-size: 2vh;
-  font-style: italic;
   color: black;
   text-align: right;
   text-decoration: none;
