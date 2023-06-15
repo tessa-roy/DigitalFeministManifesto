@@ -112,9 +112,19 @@ a,button :hover{
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
 }
 
-.welcome_text {
-  font-size: 5vh;
+.welcome_texte {
+  color: black;
+font-size: 7vh;
+line-height: 7vh;
+text-align: center;
+padding-top: 10vh;
+text-shadow: 1px 1px 6px rgb(0, 0, 0);
+text-decoration: none;
+transition: ease-in-out 0.2s;
 }
+
+
+
 
 .logo-small {
   width: 3vw;
@@ -377,8 +387,15 @@ a{
     padding-top: 5vh;
   }
 
-  .welcome_text {
-    font-size: 2vh;
+  .welcome_texte {
+      color: black;
+  font-size: 7vh;
+  line-height: 7vh;
+  text-align: center;
+  padding-top: 10vh;
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
   }
 
   .logo-small {
