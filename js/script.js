@@ -2,6 +2,10 @@
 let NumberOfWelcomingDIV = 9; //CHANGE HERE WELCOME DIV NUMBER
 let NumberOfTextDIV = 11; //CHANGE HERE TEXT DIV NUMBER
 
+
+
+
+
 // opening of the website
 addEventListener("DOMContentLoaded", (event) => {
   setTimeout(() => {
@@ -19,6 +23,8 @@ addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
+
+  
   function reCenterDiv(container) {
     const containerRect = container.getBoundingClientRect();
 
