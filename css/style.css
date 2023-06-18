@@ -51,6 +51,7 @@ a,button :hover{
 .welcome_div {
   width: 100vw;
   height: 100vh;
+  padding-top: 5vh;
   position: fixed;
   background-color: lightgray;
   position: absolute;
@@ -104,7 +105,7 @@ a,button :hover{
 
 .welcome_title {
   color: black;
-  font-size: 40vh;
+  font-size: 37vh;
   line-height: 30vh;
   padding-left: 2vw;
   padding-top: 2vh;
@@ -145,8 +146,10 @@ padding-right: 15vw;
   left: 2vw;
   top: 2vh;
   transition: ease-in-out 0.5s;
-  z-index: 15;
+  z-index: 0.5;
+  color: red;
 }
+
 
 .logo-small:hover {
   mix-blend-mode: difference;
@@ -160,13 +163,14 @@ padding-right: 15vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   z-index: 1;
+  padding: 5vh;
 }
 
 .grid-item {
   padding: 0.5vh;
   text-align: center;
-  height: 20vw;
-  width: 20vw;
+  height: 30vw;
+  width: 30vw;
   transition: ease-in-out 0.5s;
   overflow: hidden;
 }
@@ -190,7 +194,7 @@ padding-right: 15vw;
 }
 
 .corpus {
-  margin-top: 20vh;
+  margin-top: 5vh;
   padding-bottom: 5vh;
 }
 
@@ -202,13 +206,18 @@ padding-right: 15vw;
   max-width: 100%;
   height: 100%;
   border-radius: 1%;
-  /* filter: grayscale(100%); */
+
+  transition: ease-in-out 0.2s;
+}
+
+.images:hover{
+   filter: grayscale(100%);
 }
 
 h1 {
   color: black;
   font-size: 10vh;
-  line-height: 9vh;
+  line-height: 8vh;
   text-align: left;
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
 }
@@ -217,10 +226,11 @@ h1 {
   MANIFESTO */
 h2 {
   color: black;
-  font-size: 7vh;
-  line-height: 7vh;
+  font-size: 6.5vh;
+  line-height: 6.5vh;
   text-align: center;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
   text-decoration: none;
   transition: ease-in-out 0.2s;
@@ -341,6 +351,33 @@ h6:hover {
   text-decoration: none;
 }
 
+.about_text{
+  color: black;
+  font-size: 3vh;
+  line-height: 3.5vh;
+  font-family: "PT Serif", serif;
+  margin-left: 2vw;
+  text-align: left;
+  padding-top: 2vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+
+}
+.about{
+  transition: ease-in-out 1s;
+  overflow: scroll;
+}
+
+.about:hover{
+width: 100vw;
+height: 100vh;
+
+}
+
+.about_italic{
+  font-style: italic;
+}
+
 .print_manifesto {
   padding-top: 2vh;
   font-size: 2vh;
@@ -357,13 +394,14 @@ h6:hover {
 .collage {
   max-height: 20vw;
   width: auto;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   transition: ease-in-out 0.2s;
-  padding-bottom: 5vh;
+ margin-top: 10vh;
+  box-shadow: 1px 1px 6px rgb(0, 0, 0);
 }
-.collage:hover {
+/* .collage:hover {
   mix-blend-mode: difference;
-}
+} */
 
 
 
@@ -384,7 +422,17 @@ a{
     font-size: 10vh;
     line-height: 8vh;
     padding-left: 0.5vw;
-    padding-top: 5vh;
+    padding-top: 7vh;
+
+  }
+
+  .welcome_title_2 {
+    font-size: 10vh;
+    line-height: 8vh;
+    padding-left: 0.5vw;
+    padding-top: 7vh;
+    text-align: center;
+
   }
 
   .welcome_texte {
@@ -442,4 +490,9 @@ a{
     grid-gap: 3px;
     z-index: 1;
   }
+
+
+
+
+
 }
