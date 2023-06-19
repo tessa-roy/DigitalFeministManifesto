@@ -278,7 +278,7 @@ h3 {
   font-family: "Instrument Serif", serif;
   font-size: 5vh;
   line-height: 6.5vh;
-  margin-left: -10vw;
+  margin-left: -5vw;
   background-color: rgb(255, 106, 0);
 }
 
@@ -440,19 +440,12 @@ a{
 
   }
 
-  .welcome_title_2 {
-    font-size: 10vh;
-    line-height: 8vh;
-    padding-left: 0.5vw;
-    padding-top: 7vh;
-    text-align: center;
-
-  }
+ 
 
   .welcome_texte {
       color: black;
-  font-size: 7vh;
-  line-height: 7vh;
+  font-size: 4vh;
+  line-height: 4vh;
   text-align: center;
   padding-top: 10vh;
   text-shadow: 1px 1px 6px rgb(0, 0, 0);
@@ -473,8 +466,8 @@ a{
   }
 
   h1 {
-    font-size: 5vh;
-    line-height: 4.5vh;
+    font-size: 7vh;
+    line-height: 5.5vh;
   }
 
   h2 {
@@ -497,6 +490,7 @@ a{
   .word-highlight {
     font-size: 3vh;
     line-height: 3.5vh;
+    margin-left: 5vw;
   }
   .retrait {
     padding-left: 15vw;
